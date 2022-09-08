@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class=" flex items-center justify-between h-16 md:h-20">
+            <h1 class="relative z-30 font-semibold text-2xl pl-10">
+                Sanmoy Roy
+            </h1>
+            <div class=" flex items-center flex-row-reverse md:flex-row gap-3 md:gap-12 pr-20 ">
+
+                
+                <ul id="menu" class="nav-menus translate-y-[-400%] md:translate-y-0">
+               #This is to remove the ul if we try to decrease the width of the of the browser manually  
+                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </ul>
+                <button id="toggle-menu" class="relative z-30 p-2 md:hidden dark:invert">#dark:invert will help us to invert the colour of the button if dark mode or vice versa
+                <img src="images/icons/icon-menu.svg" alt="menu">
+
+            </button>
+            <!--  Toggle theme(dark mode or light mode) -->
+                <button id="toggle-theme" class="relative z-30 dark:invert">
+                    <img class="md:opacity-70 w-7 md:-mt-1" 
+                    src="./images/icons/icon-dark.svg" alt="theme">
+
+                </button>
+            </div>
+
+        </div>
+    </nav>
+    
+</body>
+</html>
