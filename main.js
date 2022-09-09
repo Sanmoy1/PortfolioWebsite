@@ -20,3 +20,14 @@ function changeMenuIcon(){// this helps us to toggle the menu if the screen size
     const icon= isContainTranslate? 'icon-menu':'icon-close'
     toggleMenuIcon.src=`./images/icons/${icon}.svg`
 }
+
+//toggle theme
+const html=document.querySelector('html');
+const toggleTheme=document.querySelector('#toggle-theme');
+const toggleThemeIcon=toggleTheme.querySelector('img');
+toggleTheme.addEventListener('click',()=>{
+    html.classList.toggle('dark')
+    const isDark=html.classList.contains('dark')
+    const themeIcon=isDark?'light':'dark'
+    toggleThemeIcon.src=`./images/icons/icon-${themeIcon}.svg`
+})
