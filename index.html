@@ -9,32 +9,41 @@
 </head>
 <body>
     <nav class="nav">
-        <div class=" flex items-center justify-between h-16 md:h-20">
+        <div class="flex items-center justify-between h-16 md:h-20">
             <h1 class="relative z-30 font-semibold text-2xl pl-10">
                 Sanmoy Roy
             </h1>
-            <div class=" flex items-center flex-row-reverse md:flex-row gap-3 md:gap-12 pr-20  ">
+            <div class="flex items-center flex-row-reverse md:flex-row gap-3 md:gap-12 pr-20">
                 <ul id="menu" class="nav-menus translate-y-[-400%] md:translate-y-0 bg-transparent">
                     <a class="nav-link" href="#home">Home</a>
                     <a class="nav-link" href="#about">About</a>
                     <a class="nav-link" href="#portfolio">Portfolio</a>
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" href="#footer">Contact</a>
                 </ul>
                 <button id="toggle-menu" class="relative z-30 p-2 md:hidden dark:invert">
                     <img src="images/icons/icon-menu.svg" alt="menu">
-
-                </button >
-               <!--  Toggle theme(dark mode or light mode) -->
+                </button>
+                <!-- Toggle theme (dark mode or light mode) -->
                 <button id="toggle-theme" class="relative z-30 dark:invert">
-                    <img class="md:opacity-70 w-7 md:-mt-1" 
-                    src="./images/icons/icon-dark.svg" alt="theme">
-
+                    <img class="md:opacity-70 w-7 md:-mt-1" src="./images/icons/icon-dark.svg" alt="theme">
                 </button>
             </div>
-
         </div>
     </nav>
+
+    <!-- Welcome Text Section -->
+    <section class="welcome-section">
+        <h2 class="welcome-text">Welcome to my website!</h2>
+        <p class="intro-text">Hi, I'm Sanmoy Roy. I am currently working at a startup as a software developer.</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer" class="footer">
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:emailofsanmoyroy@gmail.com">emailofsanmoyroy@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/sanmoy-roy-a55887222/" target="_blank">Sanmoy Roy</a></p>
+    </footer>
+
     <script src="main.js"></script>
-    
 </body>
 </html>
