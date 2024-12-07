@@ -1,47 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Portfolio Website</title>
+    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+    <title>Sanmoy Roy - Android Developer Portfolio</title>
 </head>
-<body>
-    <nav class="nav">
-        <div class="flex items-center justify-between h-16 md:h-20">
-            <h1 class="relative z-30 font-semibold text-2xl pl-10">
-                Sanmoy Roy
-            </h1>
-            <div class="flex items-center flex-row-reverse md:flex-row gap-3 md:gap-12 pr-20">
-                <ul id="menu" class="nav-menus translate-y-[-400%] md:translate-y-0 bg-transparent">
-                    <a class="nav-link" href="#home">Home</a>
-                    <a class="nav-link" href="#about">About</a>
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
-                    <a class="nav-link" href="#footer">Contact</a>
-                </ul>
-                <button id="toggle-menu" class="relative z-30 p-2 md:hidden dark:invert">
-                    <img src="images/icons/icon-menu.svg" alt="menu">
-                </button>
-                <!-- Toggle theme (dark mode or light mode) -->
-                <button id="toggle-theme" class="relative z-30 dark:invert">
-                    <img class="md:opacity-70 w-7 md:-mt-1" src="./images/icons/icon-dark.svg" alt="theme">
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white dark:bg-gray-800 shadow-lg z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <h1 class="text-2xl font-bold">SR</h1>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-blue-600 transition">Home</a>
+                    <a href="#education" class="hover:text-blue-600 transition">Education</a>
+                    <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
+                    <a href="#experience" class="hover:text-blue-600 transition">Experience</a>
+                    <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
+                </div>
+                <button id="toggle-theme" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
                 </button>
             </div>
         </div>
     </nav>
 
-    <!-- Welcome Text Section -->
-    <section class="welcome-section">
-        <h2 class="welcome-text">Welcome to my website!</h2>
-        <p class="intro-text">Hi, I'm Sanmoy Roy comeon is the. I am currently working at a startup as a software developer.</p>
+    <!-- Hero Section -->
+    <section id="home" class="pt-20 pb-12 md:pt-32 md:pb-24">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Sanmoy Roy</h1>
+            <h2 class="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-8">Android Application Developer</h2>
+            <div class="flex justify-center space-x-6">
+                <a href="tel:+919874169948" class="text-gray-600 hover:text-blue-600 transition">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a href="mailto:emailofsanmoyroy@gmail.com" class="text-gray-600 hover:text-blue-600 transition">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sanmoy-roy-a55887222/" target="_blank" class="text-gray-600 hover:text-blue-600 transition">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Sanmoy1" target="_blank" class="text-gray-600 hover:text-blue-600 transition">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer id="footer" class="footer">
-        <h2>Contact Information</h2>
-        <p>Email: <a href="mailto:emailofsanmoyroy@gmail.com">emailofsanmoyroy@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/sanmoy-roy-a55887222/" target="_blank">Sanmoy Roy</a></p>
+    <!-- Education Section -->
+    <section id="education" class="py-12 bg-white dark:bg-gray-800">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Education</h2>
+            <div class="space-y-6">
+                <div class="border-l-4 border-blue-600 pl-4">
+                    <h3 class="text-xl font-semibold">MTech in IT (Courseware Engineering)</h3>
+                    <p class="text-gray-600 dark:text-gray-400">Jadavpur University</p>
+                    <p class="text-sm text-gray-500">Sep. 2024 - Present</p>
+                </div>
+                <div class="border-l-4 border-blue-600 pl-4">
+                    <h3 class="text-xl font-semibold">BTech in Computer Science and Engineering</h3>
+                    <p class="text-gray-600 dark:text-gray-400">Adamas University</p>
+                    <p class="text-sm text-gray-500">Aug. 2019 - July 2023</p>
+                    <p class="text-blue-600 font-semibold mt-1">CGPA: 8.73</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-12">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Technical Skills</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="font-semibold mb-3">Languages</h3>
+                    <p class="text-gray-600 dark:text-gray-400">Java, Kotlin, Python, C, SQL (MySQL, SQLite), JavaScript, HTML/CSS</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="font-semibold mb-3">Frameworks</h3>
+                    <p class="text-gray-600 dark:text-gray-400">Android Studio, Flutter, Tailwind CSS</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="font-semibold mb-3">Developer Tools</h3>
+                    <p class="text-gray-600 dark:text-gray-400">Git, Gradle, XAMPP, Firebase, Figma, Tableau</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="font-semibold mb-3">Libraries & APIs</h3>
+                    <p class="text-gray-600 dark:text-gray-400">Rest API, Android Volley, Picasso, PhotoView</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-12 bg-white dark:bg-gray-800">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Experience</h2>
+            <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg">
+                <div class="flex justify-between items-start mb-4">
+                    <div>
+                        <h3 class="text-xl font-semibold">Technical Developer</h3>
+                        <p class="text-gray-600 dark:text-gray-400">Trimplin</p>
+                    </div>
+                    <p class="text-sm text-gray-500">Feb 2023 - Present</p>
+                </div>
+                <ul class="list-disc pl-5 space-y-2 text-gray-600 dark:text-gray-400">
+                    <li>Native and cross-platform app development with focus on workflow optimization</li>
+                    <li>Implemented secure authentication systems and efficient database management practices</li>
+                    <li>Streamlined project workflows reducing completion time by two weeks on average</li>
+                    <li>Enhanced delivery efficiency through improved database workflows and system architecture</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-12">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Projects</h2>
+            <div class="space-y-8">
+                <!-- SentimentScope -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">SentimentScope</h3>
+                    <p class="text-blue-600 dark:text-blue-400 mb-4">Python, Kotlin, Android Studio</p>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-600 dark:text-gray-400">
+                        <li>Developed a real-time stock market sentiment analysis mobile application</li>
+                        <li>Integrated Python ML models with Kotlin using Chaquopy for efficient processing</li>
+                        <li>Built an intuitive user interface for analyzing market sentiments from news and social media</li>
+                        <li>Achieved 20% reduction in processing time while handling 1,000+ data sources</li>
+                    </ul>
+                </div>
+
+                <!-- Art Institute App -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">Art Institute App</h3>
+                    <p class="text-blue-600 dark:text-blue-400 mb-4">Java, Android Volley, Picasso</p>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-600 dark:text-gray-400">
+                        <li>Created an interactive mobile application showcasing 300,000+ artworks</li>
+                        <li>Implemented efficient data loading and image caching using Android Volley and Picasso</li>
+                        <li>Developed advanced search functionality and smooth zoom features</li>
+                        <li>Improved search performance by 10% leading to enhanced user engagement</li>
+                    </ul>
+                </div>
+
+                <!-- FreshCart -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">FreshCart</h3>
+                    <p class="text-blue-600 dark:text-blue-400 mb-4">Java, Android SDK, Glide, SQLite, RecyclerView</p>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-600 dark:text-gray-400">
+                        <li>Developed a native Android grocery application to enhance user shopping experience</li>
+                        <li>Designing and implementing key functionalities delivery management, and payment processing</li>
+                        <li>Leveraged Java and Android SDK to create dynamic activities using RecyclerView</li>
+                        <li>Integrated Glide for optimized image handling and implemented SQLite</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="py-12 bg-white dark:bg-gray-800">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Certifications</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+                    <p class="font-semibold">Introduction to Generative AI</p>
+                    <p class="text-gray-600 dark:text-gray-400">Google</p>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+                    <p class="font-semibold">Kotlin for Java Developers</p>
+                    <p class="text-gray-600 dark:text-gray-400">LinkedIn</p>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+                    <p class="font-semibold">Introduction to Android Graphics</p>
+                    <p class="text-gray-600 dark:text-gray-400">Coursera</p>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+                    <p class="font-semibold">Digital Skills: Artificial Intelligence</p>
+                    <p class="text-gray-600 dark:text-gray-400">Accenture</p>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+                    <p class="font-semibold">Java SE 8 Features</p>
+                    <p class="text-gray-600 dark:text-gray-400">Infosys</p>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+                    <p class="font-semibold">Android App Development Masterclass using Kotlin</p>
+                    <p class="text-gray-600 dark:text-gray-400">Udemy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="tel:+919874169948" class="hover:text-blue-400 transition">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a href="mailto:emailofsanmoyroy@gmail.com" class="hover:text-blue-400 transition">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sanmoy-roy-a55887222/" target="_blank" class="hover:text-blue-400 transition">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Sanmoy1" target="_blank" class="hover:text-blue-400 transition">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <p class="text-gray-400"> 2024 Sanmoy Roy. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="main.js"></script>
